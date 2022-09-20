@@ -29,7 +29,7 @@ const slideRight = {
 
 <template>
   <main>
-    <div class="flex justify-between max-w-7xl mx-auto px-4 py-8">
+    <div class="flex justify-between px-4 py-8 mx-auto max-w-7xl">
       <div v-motion v-bind="slideVisibleLeft(0)">
         <svg
           width="32"
@@ -64,7 +64,7 @@ const slideRight = {
         <li v-motion v-bind="slideVisibleLeft(50)">Home</li>
         <li v-motion v-bind="slideVisibleLeft(100)">Services</li>
         <li v-motion v-bind="slideVisibleLeft(150)">Portofolio</li>
-        <li v-motion v-bind="slideVisibleLeft(200)">Testimonials</li>
+        <li v-motion v-bind="slideVisibleLeft(200)"><NuxtLink to ="/Testimonials">Testimonials</NuxtLink> </li>
         <li v-motion v-bind="slideVisibleLeft(250)">Career</li>
         <li v-motion v-bind="slideVisibleLeft(300)">About</li>
       </ul>
