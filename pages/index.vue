@@ -83,37 +83,6 @@ const enter = (delay) => {
       <div>
         <HerosSwiper />
       </div>
-
-      <!-- <div class="grid grid-cols-4 gap-12 mt-16">
-      <div class="rounded-3xl bg-gray-100 w-full h-[400px]">
-        <img
-          class="w-full h-[400px] object-cover rounded-3xl"
-          src="/img/img_1.png"
-          alt=""
-        />
-      </div>
-      <div class="rounded-3xl bg-gray-100 w-full h-[400px] mt-16">
-        <img
-          class="w-full h-[400px] object-cover rounded-3xl"
-          src="/img/img_2.png"
-          alt=""
-        />
-      </div>
-      <div class="rounded-3xl bg-gray-100 w-full h-[400px]">
-        <img
-          class="w-full h-[400px] object-cover rounded-3xl"
-          src="/img/img_3.png"
-          alt=""
-        />
-      </div>
-      <div class="rounded-3xl bg-gray-100 w-full h-[400px] mt-16">
-        <img
-          class="w-full h-[400px] object-cover rounded-3xl"
-          src="/img/img_4.png"
-          alt=""
-        />
-      </div>
-    </div> -->
     </div>
 
     <div id="clients" class="max-w-7xl mx-auto p-4 py-32">
@@ -165,6 +134,33 @@ const enter = (delay) => {
         <h1 class="text-5xl font-bold mb-8">Our Services</h1>
 
         <div class="grid grid-cols-3 gap-8">
+          <div class="p-6 bg-white rounded-2xl">
+            <img class="w-16 h-16 mb-4" src="/icon/social-media.png" alt="" />
+            <h1 class="font-semibold text-xl">Social Media Management</h1>
+            <p class="text-gray-600 mt-1">
+              Tortor interdum condimentum nunc molestie quam lectus euismod
+              pulvinar risus. Cursus in odio aenean.
+            </p>
+          </div>
+
+          <div class="p-6 bg-white rounded-2xl">
+            <img class="w-16 h-16 mb-4" src="/icon/event.png" alt="" />
+            <h1 class="font-semibold text-xl">Event Management</h1>
+            <p class="text-gray-600 mt-1">
+              Tortor interdum condimentum nunc molestie quam lectus euismod
+              pulvinar risus. Cursus in odio aenean.
+            </p>
+          </div>
+
+          <div class="p-6 bg-white rounded-2xl">
+            <img class="w-16 h-16 mb-4" src="/icon/branding.png" alt="" />
+            <h1 class="font-semibold text-xl">Branding</h1>
+            <p class="text-gray-600 mt-1">
+              Tortor interdum condimentum nunc molestie quam lectus euismod
+              pulvinar risus. Cursus in odio aenean.
+            </p>
+          </div>
+
           <div class="p-6 bg-white rounded-2xl">
             <img class="w-16 h-16 mb-4" src="/icon/social-media.png" alt="" />
             <h1 class="font-semibold text-xl">Social Media Management</h1>

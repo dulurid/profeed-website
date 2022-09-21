@@ -30,7 +30,7 @@ const slideRight = {
 <template>
   <main>
     <div class="flex justify-between px-4 py-8 mx-auto max-w-7xl">
-      <div v-motion v-bind="slideVisibleLeft(0)">
+      <NuxtLink to="/" v-motion v-bind="slideVisibleLeft(0)">
         <svg
           width="32"
           height="32"
@@ -58,15 +58,27 @@ const slideRight = {
             fill="#FFCC02"
           />
         </svg>
-      </div>
+      </NuxtLink>
 
       <ul class="flex gap-8">
-        <li v-motion v-bind="slideVisibleLeft(50)">Home</li>
-        <li v-motion v-bind="slideVisibleLeft(100)">Services</li>
-        <li v-motion v-bind="slideVisibleLeft(150)">Portofolio</li>
-        <li v-motion v-bind="slideVisibleLeft(200)"><NuxtLink to ="/Testimonials">Testimonials</NuxtLink> </li>
-        <li v-motion v-bind="slideVisibleLeft(250)">Career</li>
-        <li v-motion v-bind="slideVisibleLeft(300)">About</li>
+        <li v-motion v-bind="slideVisibleLeft(50)">
+          <NuxtLink to="/"> Home </NuxtLink>
+        </li>
+        <li v-motion v-bind="slideVisibleLeft(100)">
+          <NuxtLink to="/services"> Services </NuxtLink>
+        </li>
+        <li v-motion v-bind="slideVisibleLeft(150)">
+          <NuxtLink to="/portofolio"> Portofolio </NuxtLink>
+        </li>
+        <li v-motion v-bind="slideVisibleLeft(200)">
+          <NuxtLink to="/testimonials">Testimonials</NuxtLink>
+        </li>
+        <li v-motion v-bind="slideVisibleLeft(250)">
+          <NuxtLink to="/career"> Career </NuxtLink>
+        </li>
+        <li v-motion v-bind="slideVisibleLeft(300)">
+          <NuxtLink to="/about"> About </NuxtLink>
+        </li>
       </ul>
 
       <div v-motion v-bind="slideVisibleLeft(400)">
@@ -75,5 +87,7 @@ const slideRight = {
     </div>
 
     <slot />
+
+    <Footer />
   </main>
 </template>

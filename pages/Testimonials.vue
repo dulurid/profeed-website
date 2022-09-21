@@ -9,6 +9,7 @@ useHead({
   },
 });
 </script>
+
 <template>
   <section>
     <div class="container flex flex-col px-5 py-10 mx-auto md:flex-row">
@@ -31,7 +32,7 @@ useHead({
           <div class="text-sm font-bold rounded-lg">
             <div class="grid h-40 grid-cols-2 gap-4">
               <div
-                class="flex items-center p-4 bg-white rounded-lg drop-shadow-lg hover:bg-gray-200"
+                class="flex items-center p-4 bg-white rounded-lg border hover:bg-gray-200"
               >
                 <img
                   alt="People icon"
@@ -44,12 +45,10 @@ useHead({
                   <h1 class="font-bold md:text-2xl">200+</h1>
                   <p class="text-sm text-gray-500">happies clients</p>
                 </div>
-
-                <!-- 2 -->
               </div>
-              <!-- 2 -->
+
               <div
-                class="flex items-center p-4 bg-white rounded-lg drop-shadow-lg hover:bg-gray-200"
+                class="flex items-center p-4 bg-white rounded-lg border hover:bg-gray-200"
               >
                 <img
                   alt="Increase icon"
@@ -60,12 +59,10 @@ useHead({
                   <h1 class="font-bold md:text-2xl">300+</h1>
                   <p class="text-sm text-gray-500">Projects Completed</p>
                 </div>
-
-                <!-- 2 -->
               </div>
-              <!-- 3 -->
+
               <div
-                class="flex items-center p-4 bg-white rounded-lg drop-shadow-lg hover:bg-gray-200"
+                class="flex items-center p-4 bg-white rounded-lg border hover:bg-gray-200"
               >
                 <img
                   alt="Download Resume icon"
@@ -79,9 +76,9 @@ useHead({
                   <p class="text-sm text-gray-500">Apps Downloads</p>
                 </div>
               </div>
-              <!-- 4 -->
+
               <div
-                class="flex items-center p-4 bg-white rounded-lg drop-shadow-lg hover:bg-gray-200"
+                class="flex items-center p-4 bg-white rounded-lg border hover:bg-gray-200"
               >
                 <img
                   alt="Blue Internet icon"
