@@ -15,15 +15,27 @@ const projects = [
       <div class="flex items-center gap-4">
         <div class="w-1/2">
           <div class="flex flex-col item max-w-xl mx-auto">
-            <h1 class="text-5xl font-bold">
+            <h1
+              class="text-5xl font-bold"
+              v-motion
+              v-bind="useSlideUpMotion(50)"
+            >
               We have done with several projects
             </h1>
-            <h3 class="text-lg text-gray-600 mt-4">
+            <h3
+              class="text-lg text-gray-600 mt-4"
+              v-motion
+              v-bind="useSlideUpMotion(100)"
+            >
               A subheading that addresses the what, the why we should care and
               hopefully some social proof.
             </h3>
 
-            <div class="flex gap-2 my-8">
+            <div
+              class="flex gap-2 my-8"
+              v-motion
+              v-bind="useSlideUpMotion(150)"
+            >
               <button class="h-10 px-4 bg-gray-900 text-white rounded-full">
                 Get Started
               </button>
@@ -31,8 +43,14 @@ const projects = [
           </div>
         </div>
 
-        <div class="w-1/2 bg-black h-[600px]">
+        <div
+          class="w-1/2 bg-black h-[600px]"
+          v-motion
+          v-bind="useSlideUpMotion(0)"
+        >
           <img
+            v-motion
+            v-bind="useSlideUpMotion(50)"
             class="h-[600px] w-full object-cover"
             src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
             alt=""
@@ -50,6 +68,8 @@ const projects = [
             class="container flex flex-col items-start mx-auto lg:items-center"
           >
             <p
+              v-motion
+              v-bind="useSlideUpMotion(0)"
               class="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-purple-500 uppercase lg:justify-center lg:items-center"
               data-primary="purple-500"
             >
@@ -57,6 +77,8 @@ const projects = [
             </p>
 
             <h2
+              v-motion
+              v-bind="useSlideUpMotion(50)"
               class="relative flex items-start justify-start w-full max-w-3xl text-5xl font-bold lg:justify-center"
             >
               <svg
@@ -72,12 +94,16 @@ const projects = [
               See what others are saying
             </h2>
             <div
+              v-motion
+              v-bind="useSlideUpMotion(75)"
               class="block w-full h-0.5 max-w-lg mt-6 bg-purple-100 rounded-full"
               data-primary="purple-600"
             ></div>
 
             <div class="items-center justify-center w-full mt-12 mb-4 lg:flex">
               <div
+                v-motion
+                v-bind="useSlideUpMotion(100)"
                 class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0"
               >
                 <div class="flex items-center justify-center">
@@ -101,6 +127,8 @@ const projects = [
                 </blockquote>
               </div>
               <div
+                v-motion
+                v-bind="useSlideUpMotion(150)"
                 class="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200"
               >
                 <div class="flex items-center justify-center">
@@ -123,6 +151,8 @@ const projects = [
                 </blockquote>
               </div>
               <div
+                v-motion
+                v-bind="useSlideUpMotion(200)"
                 class="flex flex-col items-start justify-start w-full h-auto lg:w-1/3"
               >
                 <div class="flex items-center justify-center">
@@ -154,23 +184,30 @@ const projects = [
       <div class="px-10 mx-auto max-w-7xl">
         <div class="grid grid-cols-12 gap-6">
           <div
-            v-for="value in projects"
+            v-for="(value, index) in projects"
             :key="value"
             class="relative col-span-12 mb-10 space-y-4 md:col-span-6 lg:col-span-4"
           >
-            <a
-              href="#_"
+            <div
+              v-motion
+              v-bind="useSlideUpMotion(index * 50)"
               class="relative block w-full h-64 overflow-hidden rounded"
             >
               <img
                 class="object-cover object-center w-full h-full transition duration-500 ease-out transform scale-100 hover:scale-105"
                 :src="value"
               />
-            </a>
-            <p class="text-xs font-bold text-gray-400 uppercase">
+            </div>
+            <p
+              v-motion
+              v-bind="useSlideUpMotion(index * 75)"
+              class="text-xs font-bold text-gray-400 uppercase"
+            >
               SOCIAL MEDIA
             </p>
             <a
+              v-motion
+              v-bind="useSlideUpMotion(index * 100)"
               href="#_"
               class="block text-2xl font-medium leading-tight text-gray-700 hover:text-gray-900"
               >Learn How the Creator of Techstreet Crushed the Competition</a

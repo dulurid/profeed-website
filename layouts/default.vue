@@ -5,7 +5,7 @@ const slideVisibleLeft = (delay) => {
       x: -100,
       opacity: 0,
     },
-    visible: {
+    visibleOnce: {
       x: 0,
       opacity: 1,
       transition: {
@@ -13,17 +13,6 @@ const slideVisibleLeft = (delay) => {
       },
     },
   };
-};
-
-const slideRight = {
-  initial: {
-    x: 100,
-    opacity: 0,
-  },
-  enter: {
-    x: 0,
-    opacity: 1,
-  },
 };
 </script>
 

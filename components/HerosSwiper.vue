@@ -67,7 +67,7 @@ export default {
           y: 100,
           opacity: 0,
         },
-        visible: {
+        visibleOnce: {
           y: 0,
           opacity: 1,
           transition: {
