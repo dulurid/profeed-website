@@ -1,10 +1,12 @@
 <script setup>
 const projects = [
-  "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+  "https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-  "https://images.unsplash.com/photo-1601506521937-0121a7fc2a6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
-  "https://images.unsplash.com/photo-1633793566063-52465a148cc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80  ",
+  "https://images.unsplash.com/photo-1459184070881-58235578f004?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  "https://images.unsplash.com/photo-1658863025658-4a259cc68fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
 ];
+const text = ["Website Programing"];
+console.log(text);
 </script>
 
 <template>
@@ -42,15 +44,37 @@ const projects = [
             <div
               v-for="value in projects"
               :key="value"
-              class="relative col-span-12 lg:col-span-4"
+              class="relative col-span-12 bg-neutral-900 lg:col-span-4"
             >
-              <a href="#_" class="relative block w-full overflow-hidden h-72">
+              <a
+                href="#_"
+                class="relative block w-full overflow-hidden opacity-60 h-72"
+              >
                 <img
                   class="object-cover object-center w-full h-full transition duration-500 ease-out transform scale-100 item-center hover:scale-105"
                   :src="value"
                   alt=""
                 />
               </a>
+              <div
+                class="absolute bottom-0 w-full px-4 pb-4 pt-7 bg-gradient-cover"
+              >
+                <a href="#">
+                  <h2
+                    class="mb-1 text-2xl font-bold leading-tight text-white capitalize"
+                  >
+                    Branding Product Management
+                  </h2>
+                </a>
+                <div class="pt-1">
+                  <div class="font-semibold text-gray-100">
+                    <div
+                      class="inline-block h-3 mr-2 border-l-2 border-red-600"
+                    ></div>
+                    Profeed Services
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
