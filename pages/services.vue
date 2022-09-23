@@ -32,18 +32,15 @@
           </div>
         </div>
 
-        <div
-          class="w-1/2 bg-black h-[600px]"
-          v-motion
-          v-bind="useSlideUpMotion(150)"
-        >
-          <img
-            v-motion
-            v-bind="useSlideUpMotion(200)"
-            class="h-[600px] w-full object-cover"
-            src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-            alt=""
-          />
+        <div class="w-1/2 h-[600px]" v-motion v-bind="useSlideUpMotion(150)">
+          <div class="w-[600px]">
+            <video-background
+              poster="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+              src="https://prismic-io.s3.amazonaws.com/profeed/051e1c90-cfa0-496b-8795-db216f77b7c3_Introducing+Dynamic+Island+on+iPhone+14+Pro+_+Apple.mp4"
+              class="max-h-[600px] h-[600px] rounded-lg"
+            >
+            </video-background>
+          </div>
         </div>
       </div>
     </div>

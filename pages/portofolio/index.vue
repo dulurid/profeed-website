@@ -1,11 +1,11 @@
 <script setup>
 const projects = [
-  "https://images.unsplash.com/photo-1633793566023-a74b74104acb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-  "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-  "https://images.unsplash.com/photo-1611138300749-9338ed615f56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-  "https://images.unsplash.com/photo-1632312527047-61fc22faed62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-  "https://images.unsplash.com/photo-1611138290962-2c550ffd4002?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-  "https://images.unsplash.com/photo-1604586398467-32924c78b879?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+  'https://images.unsplash.com/photo-1633793566023-a74b74104acb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
+  'https://images.unsplash.com/photo-1597045566677-8cf032ed6634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80',
+  'https://images.unsplash.com/photo-1611138300749-9338ed615f56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
+  'https://images.unsplash.com/photo-1632312527047-61fc22faed62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80',
+  'https://images.unsplash.com/photo-1611138290962-2c550ffd4002?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80',
+  'https://images.unsplash.com/photo-1604586398467-32924c78b879?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
 ];
 </script>
 
@@ -43,18 +43,15 @@ const projects = [
           </div>
         </div>
 
-        <div
-          class="w-1/2 bg-black h-[600px]"
-          v-motion
-          v-bind="useSlideUpMotion(0)"
-        >
-          <img
-            v-motion
-            v-bind="useSlideUpMotion(50)"
-            class="h-[600px] w-full object-cover"
-            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-            alt=""
-          />
+        <div class="w-1/2 h-[600px]" v-motion v-bind="useSlideUpMotion(0)">
+          <div class="w-[600px]">
+            <video-background
+              poster="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+              src="https://prismic-io.s3.amazonaws.com/profeed/50ba1cb1-39c9-4099-9b3c-7feefff6abd8_AirPods+Pro+_+Rebuilt+from+the+sound+up+_+Apple.mp4"
+              class="max-h-[600px] h-[600px] rounded-lg"
+            >
+            </video-background>
+          </div>
         </div>
       </div>
     </div>
