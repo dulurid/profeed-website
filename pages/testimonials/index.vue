@@ -1,14 +1,4 @@
-<script setup>
-useHead({
-  title: "Profeed",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-  charset: "utf-8",
-  meta: [{ name: "description", content: "My amazing site." }],
-  bodyAttrs: {
-    class: "Testimonials",
-  },
-});
-</script>
+<script setup></script>
 
 <template>
   <section>
@@ -16,21 +6,33 @@ useHead({
       <div
         class="flex flex-col py-5 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:items-start md:text-left"
       >
-        <h2 class="mb-4 text-lg font-bold text-gray-600">
+        <h2
+          v-motion
+          v-bind="useSlideUpMotion(0)"
+          class="mb-4 text-lg font-bold text-gray-600"
+        >
           BECOME A LEGENDARY DESIGNER
         </h2>
 
-        <h1 class="mb-4 font-bold text-gray-900 sm:text-5xl">
+        <h1
+          v-motion
+          v-bind="useSlideUpMotion(50)"
+          class="mb-4 font-bold text-gray-900 sm:text-5xl"
+        >
           We have done with several projects
         </h1>
-        <p class="mb-8 pb-14">
+        <p v-motion v-bind="useSlideUpMotion(100)" class="mb-8 pb-14">
           A subheading that addresses the what, the why we should care and
           hopefully some social proof.
         </p>
 
         <div class="w-full rounded-xl">
           <div class="text-sm font-bold rounded-lg">
-            <div class="grid h-40 grid-cols-2 gap-4">
+            <div
+              v-motion
+              v-bind="useSlideUpMotion(150)"
+              class="grid h-40 grid-cols-2 gap-4"
+            >
               <div
                 class="flex items-center p-4 bg-white border rounded-lg hover:bg-gray-200"
               >
@@ -97,7 +99,11 @@ useHead({
         </div>
       </div>
 
-      <div class="w-5/6 mb-10 lg:max-w-lg lg:w-[720px] md:w-1/2 md:mb-0">
+      <div
+        v-motion
+        v-bind="useSlideUpMotion(100)"
+        class="w-5/6 mb-10 lg:max-w-lg lg:w-[720px] md:w-1/2 md:mb-0"
+      >
         <img
           class="object-cover object-center rounded"
           alt="hero"
@@ -106,7 +112,7 @@ useHead({
       </div>
     </div>
 
-    <!-- Slide 2 -->
+    <!-- Heros 2 -->
 
     <div
       class="container flex flex-col py-10 pl-5 mx-auto lg:flex-grow md:flex-row"
@@ -114,6 +120,8 @@ useHead({
       <div class="w-full h-auto mb-10 md:mb-0">
         <div class="w-auto h-full">
           <img
+            v-motion
+            v-bind="useSlideUpMotion(0)"
             class="w-full h-auto rounded"
             alt="hero"
             src="https://images.unsplash.com/photo-1571844307880-751c6d86f3f3?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBidXNpbmVzc3xlbnwwfDB8MHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
@@ -126,12 +134,18 @@ useHead({
           <p
             class="mb-8 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-xl"
           >
-            <span class="block xl:inline">
+            <span
+              v-motion
+              v-bind="useSlideUpMotion(50)"
+              class="block xl:inline"
+            >
               At Designership, they ship truly brilliant products! It’s easy to
               use and scale, and is really handy to customise for any projects.
             </span>
           </p>
           <p
+            v-motion
+            v-bind="useSlideUpMotion(100)"
             class="mx-auto mb-24 text-base text-neutral-500 sm:max-w-md md:max-w-3xl lg:text-lg"
           >
             Ac faucibus orci id quis consectetur laoreet sed. Enim congue
@@ -142,11 +156,15 @@ useHead({
           </p>
 
           <p
+            v-motion
+            v-bind="useSlideUpMotion(150)"
             class="mx-auto text-base font-bold text-neutral-900 sm:max-w-md md:max-w-3xl lg:text-l"
           >
             PROFEED CEO
           </p>
           <p
+            v-motion
+            v-bind="useSlideUpMotion(150)"
             class="mx-auto text-base font-bold text-neutral-500 sm:max-w-md md:max-w-3xl lg:text-sm"
           >
             Founder, Benefeed & Profeed (BTC)
@@ -154,6 +172,7 @@ useHead({
         </div>
       </div>
     </div>
+
     <section>
       <div class="py-4 bg-gray-50">
         <section
@@ -161,15 +180,17 @@ useHead({
         >
           <div class="px-16 bg-white">
             <div class="container flex flex-col items-start lg:items-center">
-              <div class="items-center justify-center w-full mb-4 lg:flex">
+              <div
+                v-motion
+                v-bind="useSlideUpMotion(50)"
+                class="items-center justify-center w-full mb-4 lg:flex"
+              >
                 <div
                   class="flex flex-col items-start justify-start w-full h-auto p-4 rounded-lg shadow-lg lg:w-1/3 lg:mb-0"
                 >
                   <blockquote class="text-lg leading-relaxed text-gray-500">
-                 
                     "Quis neque, eu et ipsum amet, vel et. Varius integer enim
-                    pellentesque ornare pharetra faucibs arcu. 
-                  
+                    pellentesque ornare pharetra faucibs arcu.
                   </blockquote>
                   <div class="flex items-center justify-center mt-8">
                     <div
@@ -237,7 +258,11 @@ useHead({
                 </div>
               </div>
 
-              <div class="items-center justify-center w-full mt-4 mb-4 lg:flex">
+              <div
+                v-motion
+                v-bind="useSlideUpMotion(150)"
+                class="items-center justify-center w-full mt-4 mb-4 lg:flex"
+              >
                 <div
                   class="flex flex-col items-start justify-start w-full h-auto p-4 rounded-lg shadow-lg lg:w-1/3 lg:mb-0"
                 >
