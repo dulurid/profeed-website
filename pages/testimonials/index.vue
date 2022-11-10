@@ -1,344 +1,194 @@
 <script setup></script>
 
 <template>
-  <section>
-    <div class="container flex flex-col px-5 py-10 mx-auto md:flex-row">
-      <div
-        class="flex flex-col py-5 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:items-start md:text-left"
-      >
-        <h2
-          v-motion
-          v-bind="useSlideUpMotion(0)"
-          class="mb-4 text-lg font-bold text-gray-600"
+  <div>
+    <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2
+            class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl"
+          >
+            Trusted by world class companies, design teams & popular designers
+          </h2>
+        </div>
+
+        <div
+          class="grid grid-cols-1 mt-12 lg:mt-24 gap-y-12 md:grid-cols-3 gap-x-6"
         >
-          BECOME A LEGENDARY DESIGNER
-        </h2>
+          <div class="md:px-4 lg:px-10">
+            <img
+              class="-rotate-1"
+              src="https://cdn.rareblocks.xyz/collection/celebration/images/steps/3/team.jpg"
+              alt=""
+            />
+            <h3 class="mt-8 text-xl font-semibold leading-tight text-black">
+              Join as a team
+            </h3>
+            <p class="mt-4 text-base text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
 
-        <h1
-          v-motion
-          v-bind="useSlideUpMotion(50)"
-          class="mb-4 font-bold text-gray-900 sm:text-5xl"
-        >
-          We have done with several projects
-        </h1>
-        <p v-motion v-bind="useSlideUpMotion(100)" class="mb-8 pb-14">
-          A subheading that addresses the what, the why we should care and
-          hopefully some social proof.
-        </p>
+          <div class="md:px-4 lg:px-10">
+            <img
+              class="rotate-1"
+              src="https://cdn.rareblocks.xyz/collection/celebration/images/steps/3/work.jpg"
+              alt=""
+            />
+            <h3 class="mt-8 text-xl font-semibold leading-tight text-black">
+              Work from anywhere
+            </h3>
+            <p class="mt-4 text-base text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
 
-        <div class="w-full rounded-xl">
-          <div class="text-sm font-bold rounded-lg">
-            <div
-              v-motion
-              v-bind="useSlideUpMotion(150)"
-              class="grid h-40 grid-cols-2 gap-4"
-            >
-              <div
-                class="flex items-center p-4 bg-white border rounded-lg hover:bg-gray-200"
-              >
-                <img
-                  alt="People icon"
-                  srcset="
-                    https://img.icons8.com/ultraviolet/2x/conference-call.png 2x
-                  "
-                />
-
-                <div class="mx-auto">
-                  <h1 class="font-bold md:text-2xl">200+</h1>
-                  <p class="text-sm text-gray-500">happies clients</p>
-                </div>
-              </div>
-
-              <div
-                class="flex items-center p-4 bg-white border rounded-lg hover:bg-gray-200"
-              >
-                <img
-                  alt="Increase icon"
-                  srcset="https://img.icons8.com/ultraviolet/2x/bullish.png 2x"
-                />
-
-                <div class="mx-auto">
-                  <h1 class="font-bold md:text-2xl">300+</h1>
-                  <p class="text-sm text-gray-500">Projects Completed</p>
-                </div>
-              </div>
-
-              <div
-                class="flex items-center p-4 bg-white border rounded-lg hover:bg-gray-200"
-              >
-                <img
-                  alt="Download Resume icon"
-                  srcset="
-                    https://img.icons8.com/ultraviolet/2x/open-resume.png 2x
-                  "
-                />
-
-                <div class="mx-auto">
-                  <h1 class="font-bold md:text-2xl">100M+</h1>
-                  <p class="text-sm text-gray-500">Apps Downloads</p>
-                </div>
-              </div>
-
-              <div
-                class="flex items-center p-4 bg-white border rounded-lg hover:bg-gray-200"
-              >
-                <img
-                  alt="Blue Internet icon"
-                  srcset="
-                    https://img.icons8.com/ultraviolet/2x/internet--v1.png 2x
-                  "
-                />
-
-                <div class="mx-auto">
-                  <h1 class="font-bold md:text-2xl">20+</h1>
-                  <p class="text-sm text-gray-500">Country served</p>
-                </div>
-              </div>
-            </div>
+          <div class="md:px-4 lg:px-10">
+            <img
+              class="-rotate-1"
+              src="https://cdn.rareblocks.xyz/collection/celebration/images/steps/3/success.jpg"
+              alt=""
+            />
+            <h3 class="mt-8 text-xl font-semibold leading-tight text-black">
+              Get success
+            </h3>
+            <p class="mt-4 text-base text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
           </div>
         </div>
-      </div>
-
-      <div
-        v-motion
-        v-bind="useSlideUpMotion(100)"
-        class="w-5/6 mb-10 lg:max-w-lg lg:w-[720px] md:w-1/2 md:mb-0"
-      >
-        <img
-          class="object-cover object-center rounded"
-          alt="hero"
-          src="https://images.unsplash.com/photo-1493020258366-be3ead1b3027?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d29yayUyMGZpbmFuY2V8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-        />
-      </div>
-    </div>
-
-    <!-- Heros 2 -->
-
-    <div
-      class="container flex flex-col py-10 pl-5 mx-auto lg:flex-grow md:flex-row"
-    >
-      <div class="w-full h-auto mb-10 md:mb-0">
-        <div class="w-auto h-full">
-          <img
-            v-motion
-            v-bind="useSlideUpMotion(0)"
-            class="w-full h-auto rounded"
-            alt="hero"
-            src="https://images.unsplash.com/photo-1571844307880-751c6d86f3f3?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBidXNpbmVzc3xlbnwwfDB8MHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
-          />
-        </div>
-      </div>
-
-      <div class="w-full h-auto mb-10 md:mb-0">
-        <div class="w-auto h-full pl-24">
-          <p
-            class="mb-8 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-xl"
-          >
-            <span
-              v-motion
-              v-bind="useSlideUpMotion(50)"
-              class="block xl:inline"
-            >
-              At Designership, they ship truly brilliant products! It’s easy to
-              use and scale, and is really handy to customise for any projects.
-            </span>
-          </p>
-          <p
-            v-motion
-            v-bind="useSlideUpMotion(100)"
-            class="mx-auto mb-24 text-base text-neutral-500 sm:max-w-md md:max-w-3xl lg:text-lg"
-          >
-            Ac faucibus orci id quis consectetur laoreet sed. Enim congue
-            molestie nam odio pulvinar ac ultricies. Elementum ut pellentesque
-            volutpat mi. Faucibus sit posuere nisi aenean ultrices. Suscipit
-            malesuada aenean nullam et sit dapibus eget a eu. Nisl tortor arcu
-            et.
-          </p>
-
-          <p
-            v-motion
-            v-bind="useSlideUpMotion(150)"
-            class="mx-auto text-base font-bold text-neutral-900 sm:max-w-md md:max-w-3xl lg:text-l"
-          >
-            PROFEED CEO
-          </p>
-          <p
-            v-motion
-            v-bind="useSlideUpMotion(150)"
-            class="mx-auto text-base font-bold text-neutral-500 sm:max-w-md md:max-w-3xl lg:text-sm"
-          >
-            Founder, Benefeed & Profeed (BTC)
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <section>
-      <div class="py-4 bg-gray-50">
-        <section
-          class="flex items-center justify-center py-20 bg-white min-w-screen"
-        >
-          <div class="px-16 bg-white">
-            <div class="container flex flex-col items-start lg:items-center">
-              <div
-                v-motion
-                v-bind="useSlideUpMotion(50)"
-                class="items-center justify-center w-full mb-4 lg:flex"
-              >
-                <div
-                  class="flex flex-col items-start justify-start w-full h-auto p-4 rounded-lg shadow-lg lg:w-1/3 lg:mb-0"
-                >
-                  <blockquote class="text-lg leading-relaxed text-gray-500">
-                    "Quis neque, eu et ipsum amet, vel et. Varius integer enim
-                    pellentesque ornare pharetra faucibs arcu.
-                  </blockquote>
-                  <div class="flex items-center justify-center mt-8">
-                    <div
-                      class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full"
-                    >
-                      <img
-                        src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80"
-                        class="object-cover w-full h-full"
-                        alt=""
-                      />
-                    </div>
-                    <div class="flex flex-col items-start justify-center">
-                      <h4 class="font-bold text-gray-800">John Doe</h4>
-                      <p class="text-gray-600">CEO of Something</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="flex flex-col items-start justify-start w-full h-auto p-4 mx-8 rounded-lg shadow-lg lg:w-1/3 lg:mb-0"
-                >
-                  <blockquote class="text-lg text-gray-500">
-                    "Thanks for creating this service. My life is so much
-                    easier. Thanks for making such a great product."
-                  </blockquote>
-                  <div class="flex items-center justify-center mt-8">
-                    <div
-                      class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full"
-                    >
-                      <img
-                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
-                        class="object-cover w-full h-full"
-                        alt=""
-                      />
-                    </div>
-                    <div class="flex flex-col items-start justify-center">
-                      <h4 class="font-bold text-gray-800">John Doe</h4>
-                      <p class="text-gray-600">CEO of Something</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="flex flex-col items-start justify-start w-full h-auto p-4 rounded-lg shadow-lg lg:w-1/3 lg:mb-0"
-                >
-                  <blockquote class="text-lg text-gray-500">
-                    "Thanks for creating this service. My life is so much
-                    easier. Thanks for making such a great product."
-                  </blockquote>
-                  <div class="flex items-center justify-center mt-8">
-                    <div
-                      class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full"
-                    >
-                      <img
-                        src="https://images.unsplash.com/photo-1573497491765-dccce02b29df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHdvbWVuJTIwZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                        class="object-cover w-full h-full"
-                        alt=""
-                      />
-                    </div>
-                    <div class="flex flex-col items-start justify-center">
-                      <h4 class="font-bold text-gray-800">John Doe</h4>
-                      <p class="text-gray-600">CEO of Something</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                v-motion
-                v-bind="useSlideUpMotion(150)"
-                class="items-center justify-center w-full mt-4 mb-4 lg:flex"
-              >
-                <div
-                  class="flex flex-col items-start justify-start w-full h-auto p-4 rounded-lg shadow-lg lg:w-1/3 lg:mb-0"
-                >
-                  <blockquote class="text-lg text-gray-500">
-                    "Thanks for creating this service. My life is so much
-                    easier. Thanks for making such a great product."
-                  </blockquote>
-                  <div class="flex items-center justify-center mt-8">
-                    <div
-                      class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full"
-                    >
-                      <img
-                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWVuJTIwYnVzaW5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                        class="object-cover w-full h-full"
-                        alt=""
-                      />
-                    </div>
-                    <div class="flex flex-col items-start justify-center">
-                      <h4 class="font-bold text-gray-800">John Doe</h4>
-                      <p class="text-gray-600">CEO of Something</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="flex flex-col items-start justify-start w-full h-auto p-4 mx-8 rounded-lg shadow-lg lg:w-1/3 lg:mb-0"
-                >
-                  <blockquote class="text-lg text-gray-500">
-                    "Thanks for creating this service. My life is so much
-                    easier. Thanks for making such a great product."
-                  </blockquote>
-                  <div class="flex items-center justify-center mt-8">
-                    <div
-                      class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full"
-                    >
-                      <img
-                        src="https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHdvbWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                        class="object-cover w-full h-full"
-                        alt=""
-                      />
-                    </div>
-                    <div class="flex flex-col items-start justify-center">
-                      <h4 class="font-bold text-gray-800">John Doe</h4>
-                      <p class="text-gray-600">CEO of Something</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="flex flex-col items-start justify-start w-full h-auto p-4 rounded-lg shadow-lg lg:w-1/3 lg:mb-0"
-                >
-                  <blockquote class="text-lg text-gray-500">
-                    "Thanks for creating this service. My life is so much
-                    easier. Thanks for making such a great product."
-                  </blockquote>
-                  <div class="flex items-center justify-center mt-8">
-                    <div
-                      class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full"
-                    >
-                      <img
-                        src="https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fG1lbiUyMGJ1c2luZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                        class="object-cover w-full h-full"
-                        alt=""
-                      />
-                    </div>
-                    <div class="flex flex-col items-start justify-center">
-                      <h4 class="font-bold text-gray-800">John Doe</h4>
-                      <p class="text-gray-600">CEO of Something</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </section>
-  </section>
+
+    <section class="py-10 bg-white sm:py-16 lg:py-24">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2
+            class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl"
+          >
+            Trusted by <span class="text-blue-600">30k+</span> world class
+            companies & design teams
+          </h2>
+        </div>
+
+        <div
+          class="grid max-w-xl grid-cols-1 mx-auto mt-8 text-center lg:max-w-full sm:mt-12 lg:mt-20 lg:grid-cols-3 gap-x-6 xl:gap-x-12 gap-y-6"
+        >
+          <div class="overflow-hidden bg-white rounded-md border">
+            <div class="px-8 py-12">
+              <div class="relative w-24 h-24 mx-auto">
+                <img
+                  class="relative object-cover w-24 h-24 mx-auto rounded-full"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-1.jpg"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.309 17.708C22.196 15.66 22.006 13.03 22 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.89 2.89 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292zm-11.007 0C11.19 15.66 10.999 13.03 10.993 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.89 2.89 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <blockquote class="mt-7">
+                <p class="text-lg text-black">
+                  “Amet minim mollit non deserunt ullam co est sit aliqua dolor
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat”
+                </p>
+              </blockquote>
+              <p class="text-base font-semibold tex-tblack mt-9">
+                Jenny Wilson
+              </p>
+              <p class="mt-1 text-base text-gray-600">
+                Project Manager at Microsoft
+              </p>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white rounded-md border">
+            <div class="px-8 py-12">
+              <div class="relative w-24 h-24 mx-auto">
+                <img
+                  class="relative object-cover w-24 h-24 mx-auto rounded-full"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-2.jpg"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.309 17.708C22.196 15.66 22.006 13.03 22 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.89 2.89 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292zm-11.007 0C11.19 15.66 10.999 13.03 10.993 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.89 2.89 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <blockquote class="mt-7">
+                <p class="text-lg text-black">
+                  “Amet minim mollit non deserunt ullam co est sit aliqua dolor
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat”
+                </p>
+              </blockquote>
+              <p class="text-base font-semibold tex-tblack mt-9">Robert Fox</p>
+              <p class="mt-1 text-base text-gray-600">Founder at Brain.co</p>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white rounded-md border">
+            <div class="px-8 py-12">
+              <div class="relative w-24 h-24 mx-auto">
+                <img
+                  class="relative object-cover w-24 h-24 mx-auto rounded-full"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-3.jpg"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.309 17.708C22.196 15.66 22.006 13.03 22 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.89 2.89 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292zm-11.007 0C11.19 15.66 10.999 13.03 10.993 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.89 2.89 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <blockquote class="mt-7">
+                <p class="text-lg text-black">
+                  “Amet minim mollit non deserunt ullam co est sit aliqua dolor
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat”
+                </p>
+              </blockquote>
+              <p class="text-base font-semibold tex-tblack mt-9">
+                Kristin Watson
+              </p>
+              <p class="mt-1 text-base text-gray-600">UX Designer at Google</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
